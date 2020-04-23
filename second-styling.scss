@@ -1,3 +1,172 @@
+$green: #00c030;
+$orange: #ff8000;
+$blue: #40bcf4;
+$gray: #707f8d;
+$gray-border: #969092;
+
 body {
     background-color: #14181c;
+}
+
+.container {
+    max-width: 70%;
+}
+
+.background {
+    min-height: 90vh;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(
+                90deg,
+                #14181d 0,
+                rgba(20, 24, 29, 0.98556487) 0.97%,
+                rgba(20, 24, 29, 0.9451312) 2.07833333%,
+                rgba(20, 24, 29, 0.88300656) 3.29666667%,
+                rgba(20, 24, 29, 0.80349854) 4.60166667%,
+                rgba(20, 24, 29, 0.71091472) 5.96666667%,
+                rgba(20, 24, 29, 0.60956268) 7.365%,
+                rgba(20, 24, 29, 0.50375) 8.77166667%,
+                rgba(20, 24, 29, 0.39778426) 10.16%,
+                rgba(20, 24, 29, 0.29597303) 11.505%,
+                rgba(20, 24, 29, 0.20262391) 12.78%,
+                rgba(20, 24, 29, 0.12204446) 13.95833333%,
+                rgba(20, 24, 29, 0.05854227) 15.01666667%,
+                rgba(20, 24, 29, 0.01642493) 15.92833333%,
+                rgba(20, 24, 29, 0) 16.66666667%,
+                rgba(20, 24, 29, 0) 83.33333333%,
+                rgba(20, 24, 29, 0.01642493) 84.07166667%,
+                rgba(20, 24, 29, 0.05854227) 84.98333333%,
+                rgba(20, 24, 29, 0.12204446) 86.04166667%,
+                rgba(20, 24, 29, 0.20262391) 87.22%,
+                rgba(20, 24, 29, 0.29597303) 88.495%,
+                rgba(20, 24, 29, 0.39778426) 89.84%,
+                rgba(20, 24, 29, 0.50375) 91.22833333%,
+                rgba(20, 24, 29, 0.60956268) 92.635%,
+                rgba(20, 24, 29, 0.71091472) 94.03333333%,
+                rgba(20, 24, 29, 0.80349854) 95.39833333%,
+                rgba(20, 24, 29, 0.88300656) 96.70333333%,
+                rgba(20, 24, 29, 0.9451312) 97.92166667%,
+                rgba(20, 24, 29, 0.98556487) 99.03%,
+                #14181d
+            ),
+            linear-gradient(
+                0deg,
+                #14181d 0,
+                #14181d 21.48148148%,
+                rgba(20, 24, 29, 0.98556487) 23.63703704%,
+                rgba(20, 24, 29, 0.9451312) 26.1%,
+                rgba(20, 24, 29, 0.88300656) 28.80740741%,
+                rgba(20, 24, 29, 0.80349854) 31.70740741%,
+                rgba(20, 24, 29, 0.71091472) 34.74074074%,
+                rgba(20, 24, 29, 0.60956268) 37.84814815%,
+                rgba(20, 24, 29, 0.50375) 40.97407407%,
+                rgba(20, 24, 29, 0.39778426) 44.05925926%,
+                rgba(20, 24, 29, 0.29597303) 47.04814815%,
+                rgba(20, 24, 29, 0.20262391) 49.88148148%,
+                rgba(20, 24, 29, 0.12204446) 52.5%,
+                rgba(20, 24, 29, 0.05854227) 54.85185185%,
+                rgba(20, 24, 29, 0.01642493) 56.87777778%,
+                rgba(20, 24, 29, 0) 58.51851852%
+            );
+    }
+    img {
+        z-index: -2;
+    }
+}
+
+header {
+    padding: 2em 0;
+    z-index: 3;
+    letter-spacing: 1px;
+    nav ul li input {
+        opacity: 0.4;
+        border-radius: 100px;
+        border: none;
+        padding: 0.2em 1em;
+        transition: opacity 100ms ease-in;
+        width: 100%;
+        &:focus {
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+main {
+    margin-top: 40vh;
+}
+
+.intro {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    button {
+        background-color: $green;
+        width: 25%;
+        padding: 0.5em 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    p {
+        color: $gray;
+        i {
+            width: 32px;
+            margin-left: 0.3em;
+        }
+        .apple-logo {
+            background: url('./imgs/iconmonstr-apple-os-1-24.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .android-logo {
+            background: url('./imgs/iconmonstr-android-os-1-32.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+
+.popular-films {
+    & > div {
+        img {
+            border: 1px solid $gray-border;
+        }
+        &:hover img {
+            box-shadow: inset 0px 5px 5px $green;
+        }
+        ul {
+            background-color: black;
+            opacity: 0.5;
+            width: 60%;
+            top: 20%;
+            left: 20%;
+            li {
+                color: white;
+                opacity: 1;
+            }
+            li.watched {
+                background: url('./imgs/watch-green.png');
+                width: 26px;
+                height: 26px;
+            }
+            li.liked {
+                background: url('./imgs/heart-yellow.png');
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
 }
