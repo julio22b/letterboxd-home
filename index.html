@@ -62,7 +62,7 @@
                         <a href="#" class="col-12">
                             <img src="./imgs/487135-first-cow-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>2,523</li>
                             <li class="liked"></li>
@@ -73,7 +73,7 @@
                         <a href="#" class="col-12">
                             <img src="./imgs/458743-the-way-back-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>13,409</li>
                             <li class="liked"></li>
@@ -84,7 +84,7 @@
                         <a href="#" class="col-12">
                             <img src="./imgs/438272-onward-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>76,152</li>
                             <li class="liked"></li>
@@ -98,7 +98,7 @@
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>105,321</li>
                             <li class="liked"></li>
@@ -112,7 +112,7 @@
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>133,216</li>
                             <li class="liked"></li>
@@ -126,7 +126,7 @@
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute">
+                        <ul class="no-list-style absolute d-flex-col align-items-center">
                             <li class="watched"></li>
                             <li>122,751</li>
                             <li class="liked"></li>
@@ -134,50 +134,68 @@
                         </ul>
                     </div>
                 </section>
-                <section class="letterboxd-lets-you row d-flex-row">
+                <section class="letterboxd-lets-you row d-flex-row flex-nowrap">
+                    <h3 class="col-12 small font-normal">LETTERBOXD LETS YOU...</h3>
                     <article class="d-flex-row col-4">
-                        <div class="watch col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Keep track of every film you've ever watched (or just start from the day
-                            you join)
-                        </p>
+                        <div class="wrapper green d-flex-row align-items-start 12 no-p">
+                            <div class="watch col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Keep track of every film you've ever watched (or just start from the
+                                day you join)
+                            </p>
+                        </div>
                     </article>
                     <article class="d-flex-row col-4">
-                        <div class="like col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Show some love for your favorite films, lists and reviews with a "like"
-                        </p>
+                        <div class="wrapper orange d-flex-row align-items-start 12 no-p">
+                            <div class="like col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Show some love for your favorite films, lists and reviews with a
+                                "like"
+                            </p>
+                        </div>
                     </article>
                     <article class="d-flex-row col-4">
-                        <div class="bars col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Write and share reviews, and follow friends and other members to read
-                            theirs
-                        </p>
+                        <div class="wrapper blue d-flex-row align-items-start 12 no-p">
+                            <div class="bars col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Write and share reviews, and follow friends and other members to
+                                read theirs
+                            </p>
+                        </div>
                     </article>
                     <article class="d-flex-row col-4">
-                        <div class="star col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Rate each film on a five-star scale (with halves) to record and share
-                            your reaction
-                        </p>
+                        <div class="wrapper green d-flex-row align-items-start 12 no-p">
+                            <div class="star col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Rate each film on a five-star scale (with halves) to record and
+                                share your reaction
+                            </p>
+                        </div>
                     </article>
                     <article class="d-flex-row col-4">
-                        <div class="case col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Keep a diary of your film watching (and upgrade to
-                            <span class="font-bold">Pro</span> for comprehensive stats
-                        </p>
+                        <div class="wrapper orange d-flex-row align-items-start 12 no-p">
+                            <div class="case col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Keep a diary of your film watching (and upgrade to
+                                <span class="font-bold">Pro</span> for comprehensive stats
+                            </p>
+                        </div>
                     </article>
                     <article class="d-flex-row col-4">
-                        <div class="squares col-4"></div>
-                        <p class="col-4 text-white col-8">
-                            Compile and share lists of films on any topic and keep a watchlist of
-                            films to see
-                        </p>
+                        <div class="wrapper blue d-flex-row align-items-start 12 no-p">
+                            <div class="squares col-2"></div>
+                            <p class="col-4 text-white col-10">
+                                Compile and share lists of films on any topic and keep a watchlist
+                                of films to see
+                            </p>
+                        </div>
                     </article>
                 </section>
                 <section class="just-reviewed row">
+                    <header class="d-flex-row col-12 justify-content-between">
+                        <h3 class="small">JUST REVIEWED...</h3>
+                        <small>410,186,419 films watched</small>
+                    </header>
                     <div class="col-1">
                         <img src="./imgs/468556-fantasy-island-0-70-0-105-crop.jpg" alt="" />
                     </div>
@@ -223,10 +241,10 @@
                     <div class="col-1">
                         <img src="./imgs/harrypotter2-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <p class="col-12">
+                    <p class="col-12 text-center h2 font-normal">
                         Write and share reviews. Compile your own lists. Share your life in film.
                     </p>
-                    <p class="col-12">
+                    <p class="col-12 text-center small">
                         Below are some popular reviews and lists from this week.
                         <span><a href="#">Sign up</a></span> to create your own.
                     </p>
@@ -234,7 +252,7 @@
                 <section class="popular row">
                     <section class="popular-this-week col-8">
                         <header class="d-flex-row justify-content-between">
-                            <h5 class="h5">POPULAR REVIEWS THIS WEEK</h5>
+                            <h5 class="h6 font-normal">POPULAR REVIEWS THIS WEEK</h5>
                             <span><a href="#" class="small">MORE</a></span>
                         </header>
                         <article class="w-100">
@@ -248,15 +266,22 @@
                                     <h3 class="h3 text-white">
                                         Suspiria <span class="font-normal">2018</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i> <span class="font-bold">Lucy</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 15
+                                    <div
+                                        class="commenter d-flex-row align-items-center d-flex-row align-items-center"
+                                    >
+                                        <img src="./imgs/lucy.png" alt="" />
+                                        <span class="font-bold">Lucy</span>
+                                        <img src="./imgs/4-and-half.png" alt="" />
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">15</span>
                                     </div>
                                     <p>
                                         who needs to understand what the fuck is going on when the
                                         vibes are this good
                                     </p>
-                                    <p><i class="heart"></i> 978 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 978 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>
@@ -272,16 +297,20 @@
                                     <h3 class="h3 text-white">
                                         Blue Velvet <span class="font-normal">1986</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i>
+                                    <div class="commenter d-flex-row align-items-center">
+                                        <img src="./imgs/karsten.png" alt="" />
                                         <span class="font-bold">Karsten Runquist</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 26
+                                        <img src="./imgs/5-stars.png" alt="" />
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">26</span>
                                     </div>
                                     <p>
                                         So many things I realized on a second watch. Love this
                                         movie! A lot! Wow! (talking about it on the Karstcast)
                                     </p>
-                                    <p><i class="heart"></i> 495 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 495 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>
@@ -297,10 +326,12 @@
                                     <h3 class="h3 text-white">
                                         Chicken Run <span class="font-normal">2000</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i>
+                                    <div class="commenter d-flex-row align-items-center">
+                                        <img src="./imgs/brat.png" alt="" />
                                         <span class="font-bold">brat pitt</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 35
+                                        <img src="./imgs/4-stars.png" alt="" />
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">35</span>
                                     </div>
                                     <p>
                                         my Chicken Run Story (everyone has one) is that i had
@@ -312,7 +343,9 @@
                                         rat. from there, i was able to summon up the courage to
                                         watch the original… <a href="#" class="more">more</a>
                                     </p>
-                                    <p><i class="heart"></i> 1,421 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 1,421 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>
@@ -328,10 +361,11 @@
                                     <h3 class="h3 text-white">
                                         Swallow <span class="font-normal">2019</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i>
+                                    <div class="commenter d-flex-row align-items-center">
+                                        <img src="./imgs/sean.png" alt="" />
                                         <span class="font-bold">Sean Baker</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 9
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">9</span>
                                     </div>
                                     <p>
                                         Fantastic debut by Carlo Mirabella-Davis. With both writing
@@ -348,7 +382,9 @@
                                         (Florida Project). This will be on my top ten of 2020.
                                         Guaranteed. Streamed
                                     </p>
-                                    <p><i class="heart"></i> 423 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 423 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>
@@ -360,10 +396,12 @@
                                     <h3 class="h3 text-white">
                                         Whiplash <span class="font-normal">2014</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i>
+                                    <div class="commenter d-flex-row align-items-center">
+                                        <img src="./imgs/random.png" alt="" />
                                         <span class="font-bold">Demi Adejuyigbe</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 141
+                                        <img src="./imgs/5-stars.png" alt="" />
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">141</span>
                                     </div>
                                     <p>
                                         A perfect film! Phantom Thread for music nerds! My friend
@@ -373,7 +411,9 @@
                                         viewing and she’s in post-Whiplash shock! Everybody please
                                         comment below with “Nice one, Celia!”
                                     </p>
-                                    <p><i class="heart"></i> 671 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 671 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>
@@ -390,17 +430,21 @@
                                         Portrait of a Lady on Fire
                                         <span class="font-normal">2019</span>
                                     </h3>
-                                    <div class="commenter">
-                                        <i class="name"></i
-                                        ><span class="font-bold">adrianbalboa</span>
-                                        <i class="stars"></i><i class="speech-bubble"></i> 3
+                                    <div class="commenter d-flex-row align-items-center">
+                                        <img src="./imgs/adrian.png" alt="" />
+                                        <span class="font-bold">adrianbalboa</span>
+                                        <img src="./imgs/4-and-half.png" alt="" />
+                                        <i class="speech-bubble"></i>
+                                        <span class="comments-amount">3</span>
                                     </div>
                                     <p>
                                         me already touch starved and staring directly down the
                                         barrel of a mandatory quarantine: ooo romantic period drama
                                         :-)
                                     </p>
-                                    <p><i class="heart"></i> 619 likes</p>
+                                    <p class="d-flex-row align-items-center">
+                                        <i class="heart"></i> 619 likes
+                                    </p>
                                 </figcaption>
                             </figure>
                         </article>

@@ -117,6 +117,7 @@ main {
         padding: 0.5em 0;
         margin-top: 2em;
         margin-bottom: 2em;
+        border-radius: 5px;
     }
     p {
         color: $gray;
@@ -147,25 +148,235 @@ main {
         &:hover img {
             box-shadow: inset 0px 5px 5px $green;
         }
+        &:hover ul {
+            display: flex;
+        }
         ul {
             background-color: black;
-            opacity: 0.5;
+            opacity: 0.7;
             width: 60%;
             top: 20%;
             left: 20%;
+            padding: 0.7em 0;
+            display: none;
             li {
                 color: white;
                 opacity: 1;
+                font-size: 1.1rem;
+                font-weight: bold;
             }
             li.watched {
                 background: url('./imgs/watch-green.png');
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 26px;
                 height: 26px;
             }
             li.liked {
                 background: url('./imgs/heart-yellow.png');
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 26px;
                 height: 26px;
+            }
+            li:nth-child(odd) {
+                margin-top: 0.7em;
+                margin-bottom: 0.3em;
+            }
+        }
+    }
+}
+
+.letterboxd-lets-you {
+    margin: 3em 0;
+    > h3 {
+        color: #94a5b6;
+        padding-left: 0.3em;
+        padding-bottom: 0.7em;
+    }
+    article {
+        padding: 0 0.3em 0.5em 0.3em;
+        .wrapper {
+            background-color: #445566;
+            padding: 1.2em 0.5em;
+            border-radius: 3px;
+            .watch {
+                background: url('./imgs/watch.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            .like {
+                background: url('./imgs/like.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            .bars {
+                background: url('./imgs/bars.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            .star {
+                background: url('./imgs/star.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            .case {
+                background: url('./imgs/case.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            .squares {
+                background: url('./imgs/squares.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+            }
+            p {
+                font-size: 0.8rem;
+                color: #ddeeff;
+                margin: 0;
+                padding-right: 0;
+                span {
+                    color: white;
+                    font-size: 0.8rem;
+                }
+            }
+            &.orange:hover {
+                background-color: $orange;
+            }
+            &.green:hover {
+                background-color: $green;
+            }
+            &.blue:hover {
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.just-reviewed {
+    header {
+        padding: 0.2em 0;
+        border-bottom: 1px solid #94a5b6;
+        margin-bottom: 1em;
+        h3,
+        small {
+            color: #94a5b6;
+            font-weight: normal;
+        }
+        small {
+            font-size: 0.7rem;
+        }
+    }
+    & > div {
+        padding: 0 4px;
+        img {
+            border: 1px solid $gray-border;
+            border-radius: 3px;
+        }
+    }
+    p {
+        color: #94a5b6;
+        margin-top: 3em;
+    }
+
+    p:last-child {
+        margin: 0;
+        span a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.popular {
+    margin-top: 3em;
+    .popular-this-week {
+        header {
+            border-bottom: 1px solid #94a5b6;
+            padding: 0.3em 0;
+            margin-bottom: 1em;
+            h5 {
+                color: #94a5b6;
+            }
+            span a {
+                color: #94a5b6;
+                text-decoration: none;
+                font-size: 0.7rem;
+            }
+        }
+        article {
+            padding: 1em 0;
+            border-bottom: 1px solid #2c3440;
+            figcaption {
+                h3 span {
+                    color: #94a5b6;
+                    padding: 0.2em 0;
+                }
+                .commenter {
+                    color: #94a5b6;
+                    padding: 0.2em 0;
+                    img {
+                        margin: 0 0.5em;
+                    }
+                    img:first-child {
+                        width: 28px;
+                        height: 28px;
+                        margin-left: 0;
+                        margin-right: 0.3em;
+                    }
+                    span {
+                        color: #94a5b6;
+                        margin-right: 0.5em;
+                        font-size: 0.9rem;
+                    }
+                    .speech-bubble {
+                        width: 14px;
+                        height: 14px;
+                        background: url('./imgs/iconmonstr-speech-bubble-15-16.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        margin: 0 0.25em;
+                    }
+                    .comments-amount {
+                        font-size: 0.7rem;
+                    }
+                }
+                p {
+                    color: #94a5b6;
+                    font-size: 0.9rem;
+                    letter-spacing: 0;
+                    a {
+                        text-decoration: none;
+                        color: #94a5b6;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+                .heart {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('./imgs/like.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 0.3em;
+                }
+                p:last-child {
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
             }
         }
     }

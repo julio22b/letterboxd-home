@@ -70,6 +70,7 @@ main {
   padding: 0.5em 0;
   margin-top: 2em;
   margin-bottom: 2em;
+  border-radius: 5px;
 }
 
 .intro p {
@@ -104,16 +105,273 @@ main {
           box-shadow: inset 0px 5px 5px #00c030;
 }
 
+.popular-films > div:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .popular-films > div ul {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
   width: 60%;
   top: 20%;
   left: 20%;
+  padding: 0.7em 0;
+  display: none;
 }
 
 .popular-films > div ul li {
   color: white;
   opacity: 1;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.popular-films > div ul li.watched {
+  background: url("./imgs/watch-green.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.popular-films > div ul li.liked {
+  background: url("./imgs/heart-yellow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.popular-films > div ul li:nth-child(odd) {
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+}
+
+.letterboxd-lets-you {
+  margin: 3em 0;
+}
+
+.letterboxd-lets-you > h3 {
+  color: #94a5b6;
+  padding-left: 0.3em;
+  padding-bottom: 0.7em;
+}
+
+.letterboxd-lets-you article {
+  padding: 0 0.3em 0.5em 0.3em;
+}
+
+.letterboxd-lets-you article .wrapper {
+  background-color: #445566;
+  padding: 1.2em 0.5em;
+  border-radius: 3px;
+}
+
+.letterboxd-lets-you article .wrapper .watch {
+  background: url("./imgs/watch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper .like {
+  background: url("./imgs/like.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper .bars {
+  background: url("./imgs/bars.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper .star {
+  background: url("./imgs/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper .case {
+  background: url("./imgs/case.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper .squares {
+  background: url("./imgs/squares.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.letterboxd-lets-you article .wrapper p {
+  font-size: 0.8rem;
+  color: #ddeeff;
+  margin: 0;
+  padding-right: 0;
+}
+
+.letterboxd-lets-you article .wrapper p span {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.letterboxd-lets-you article .wrapper.orange:hover {
+  background-color: #ff8000;
+}
+
+.letterboxd-lets-you article .wrapper.green:hover {
+  background-color: #00c030;
+}
+
+.letterboxd-lets-you article .wrapper.blue:hover {
+  background-color: #40bcf4;
+}
+
+.just-reviewed header {
+  padding: 0.2em 0;
+  border-bottom: 1px solid #94a5b6;
+  margin-bottom: 1em;
+}
+
+.just-reviewed header h3,
+.just-reviewed header small {
+  color: #94a5b6;
+  font-weight: normal;
+}
+
+.just-reviewed header small {
+  font-size: 0.7rem;
+}
+
+.just-reviewed > div {
+  padding: 0 4px;
+}
+
+.just-reviewed > div img {
+  border: 1px solid #969092;
+  border-radius: 3px;
+}
+
+.just-reviewed p {
+  color: #94a5b6;
+  margin-top: 3em;
+}
+
+.just-reviewed p:last-child {
+  margin: 0;
+}
+
+.just-reviewed p:last-child span a {
+  color: white;
+  text-decoration: none;
+}
+
+.just-reviewed p:last-child span a:hover {
+  color: #40bcf4;
+}
+
+.popular {
+  margin-top: 3em;
+}
+
+.popular .popular-this-week header {
+  border-bottom: 1px solid #94a5b6;
+  padding: 0.3em 0;
+  margin-bottom: 1em;
+}
+
+.popular .popular-this-week header h5 {
+  color: #94a5b6;
+}
+
+.popular .popular-this-week header span a {
+  color: #94a5b6;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.popular .popular-this-week article {
+  padding: 1em 0;
+  border-bottom: 1px solid #2c3440;
+}
+
+.popular .popular-this-week article figcaption h3 span {
+  color: #94a5b6;
+  padding: 0.2em 0;
+}
+
+.popular .popular-this-week article figcaption .commenter {
+  color: #94a5b6;
+  padding: 0.2em 0;
+}
+
+.popular .popular-this-week article figcaption .commenter img {
+  margin: 0 0.5em;
+}
+
+.popular .popular-this-week article figcaption .commenter img:first-child {
+  width: 28px;
+  height: 28px;
+  margin-left: 0;
+  margin-right: 0.3em;
+}
+
+.popular .popular-this-week article figcaption .commenter span {
+  color: #94a5b6;
+  margin-right: 0.5em;
+  font-size: 0.9rem;
+}
+
+.popular .popular-this-week article figcaption .commenter .speech-bubble {
+  width: 14px;
+  height: 14px;
+  background: url("./imgs/iconmonstr-speech-bubble-15-16.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 0.25em;
+}
+
+.popular .popular-this-week article figcaption .commenter .comments-amount {
+  font-size: 0.7rem;
+}
+
+.popular .popular-this-week article figcaption p {
+  color: #94a5b6;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+.popular .popular-this-week article figcaption p a {
+  text-decoration: none;
+  color: #94a5b6;
+}
+
+.popular .popular-this-week article figcaption p a:hover {
+  color: white;
+}
+
+.popular .popular-this-week article figcaption .heart {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("./imgs/like.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.3em;
+}
+
+.popular .popular-this-week article figcaption p:last-child {
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=second-styling.css.map */
