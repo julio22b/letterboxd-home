@@ -381,6 +381,10 @@ main {
   font-weight: bold;
 }
 
+.popular .popular-this-week article:last-child {
+  border: none;
+}
+
 .popular .popular-lists-reviewers {
   padding: 0;
   padding-left: 2em;
@@ -529,5 +533,75 @@ main {
   color: #94a5b6;
   text-decoration: none;
   font-size: 0.7rem;
+}
+
+.recent-news header {
+  border-bottom: 1px solid #94a5b6;
+  padding: 0.3em 0;
+  margin-bottom: 2em;
+}
+
+.recent-news header h5 {
+  color: #94a5b6;
+}
+
+.recent-news header span a {
+  color: #94a5b6;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.recent-news article figure figcaption h3 {
+  margin-top: 0.5em;
+}
+
+.recent-news article figure figcaption p {
+  color: #94a5b6;
+  font-size: 0.9rem;
+}
+
+footer {
+  position: relative;
+  padding: 2em 0;
+  background-color: #2c3440;
+}
+
+footer::before {
+  content: '';
+  background-color: #2c3440;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+}
+
+footer::after {
+  content: '';
+  background-color: #2c3440;
+  position: absolute;
+  top: 0;
+  right: -30%;
+  width: 30%;
+  height: 100%;
+}
+
+footer div ul {
+  padding: 1em 0 !important;
+}
+
+footer div ul li {
+  color: #94a5b6;
+  font-size: 0.9rem;
+}
+
+footer div ul:last-child li {
+  margin-left: 0.3em;
+}
+
+footer p,
+footer a {
+  color: #94a5b696;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=second-styling.css.map */

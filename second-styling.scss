@@ -385,6 +385,9 @@ main {
                 }
             }
         }
+        article:last-child {
+            border: none;
+        }
     }
     .popular-lists-reviewers {
         padding: 0;
@@ -508,5 +511,77 @@ main {
                 }
             }
         }
+    }
+}
+
+.recent-news {
+    header {
+        border-bottom: 1px solid #94a5b6;
+        padding: 0.3em 0;
+        margin-bottom: 2em;
+        h5 {
+            color: #94a5b6;
+        }
+        span a {
+            color: #94a5b6;
+            text-decoration: none;
+            font-size: 0.7rem;
+        }
+    }
+    article {
+        figure {
+            figcaption {
+                h3 {
+                    margin-top: 0.5em;
+                }
+                p {
+                    color: #94a5b6;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    &::before {
+        content: '';
+        background-color: #2c3440;
+        position: absolute;
+        top: 0;
+        left: -30%;
+        width: 30%;
+        height: 100%;
+    }
+    &::after {
+        content: '';
+        background-color: #2c3440;
+        position: absolute;
+        top: 0;
+        right: -30%;
+        width: 30%;
+        height: 100%;
+    }
+    padding: 2em 0;
+    background-color: #2c3440;
+    div {
+        ul {
+            padding: 1em 0 !important;
+            li {
+                color: #94a5b6;
+                font-size: 0.9rem;
+            }
+        }
+        ul:last-child {
+            li {
+                margin-left: 0.3em;
+            }
+        }
+    }
+    p,
+    a {
+        color: #94a5b696;
+        font-size: 0.8rem;
     }
 }
