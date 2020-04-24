@@ -97,7 +97,7 @@ main {
 }
 
 .popular-films > div img {
-  border: 1px solid #969092;
+  border: 1px solid #707f8d88;
 }
 
 .popular-films > div:hover img {
@@ -256,7 +256,7 @@ main {
 }
 
 .just-reviewed > div img {
-  border: 1px solid #969092;
+  border: 1px solid #707f8d88;
   border-radius: 3px;
 }
 
@@ -301,6 +301,12 @@ main {
 .popular .popular-this-week article {
   padding: 1em 0;
   border-bottom: 1px solid #2c3440;
+}
+
+.popular .popular-this-week article figure > div img {
+  border: 1px solid #707f8d88;
+  min-width: 100%;
+  border-radius: 5px;
 }
 
 .popular .popular-this-week article figcaption h3 span {
@@ -363,7 +369,7 @@ main {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("./imgs/like.png");
+  background: url("./imgs/heart-dark-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -373,5 +379,155 @@ main {
 .popular .popular-this-week article figcaption p:last-child {
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+.popular .popular-lists-reviewers {
+  padding: 0;
+  padding-left: 2em;
+}
+
+.popular .popular-lists {
+  padding-right: 0;
+}
+
+.popular .popular-lists header {
+  border-bottom: 1px solid #94a5b6;
+  padding: 0.3em 0;
+  margin-bottom: 1em;
+}
+
+.popular .popular-lists header h5 {
+  color: #94a5b6;
+  font-size: 0.9rem;
+}
+
+.popular .popular-lists header span a {
+  color: #94a5b6;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.popular .popular-lists .list {
+  padding: 1em 0;
+}
+
+.popular .popular-lists .list ul li {
+  border: 1px solid #707f8d88;
+  margin-left: -9%;
+  -webkit-box-shadow: 3px 0 3px black;
+          box-shadow: 3px 0 3px black;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.popular .popular-lists .list ul li img {
+  min-width: 100%;
+}
+
+.popular .popular-lists .list ul li:first-child {
+  z-index: 20;
+  margin-left: 0;
+}
+
+.popular .popular-lists .list ul li:nth-child(2) {
+  z-index: 19;
+}
+
+.popular .popular-lists .list ul li:nth-child(3) {
+  z-index: 18;
+}
+
+.popular .popular-lists .list ul li:nth-child(4) {
+  z-index: 17;
+}
+
+.popular .popular-lists .list ul li:nth-child(5) {
+  z-index: 16;
+}
+
+.popular .popular-lists .list h4 {
+  color: white;
+  margin-top: 0.5em;
+}
+
+.popular .popular-lists .list p {
+  color: #94a5b6;
+  font-size: 0.7rem;
+}
+
+.popular .popular-lists .list p img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2em;
+}
+
+.popular .popular-lists .list p span {
+  color: #94a5b6;
+  margin-right: 0.4em;
+}
+
+.popular .popular-lists .list p .heart {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("./imgs/heart-dark-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.3em;
+}
+
+.popular .popular-lists .list p .speech-bubble {
+  width: 14px;
+  height: 14px;
+  background: url("./imgs/iconmonstr-speech-bubble-15-16.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 0.25em;
+}
+
+.popular .popular-reviewers {
+  padding-right: 0;
+}
+
+.popular .popular-reviewers header {
+  border-bottom: 1px solid #94a5b6;
+  padding: 0.3em 0;
+}
+
+.popular .popular-reviewers header h5 {
+  color: #94a5b6;
+  font-size: 0.9rem;
+}
+
+.popular .popular-reviewers header span a {
+  color: #94a5b6;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.popular .popular-reviewers figure {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #707f8d88;
+}
+
+.popular .popular-reviewers figure img {
+  width: 16%;
+  height: 50px;
+}
+
+.popular .popular-reviewers figure figcaption {
+  margin-left: 0.5em;
+}
+
+.popular .popular-reviewers figure figcaption p {
+  margin: 0;
+}
+
+.popular .popular-reviewers figure figcaption p a {
+  color: #94a5b6;
+  text-decoration: none;
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=second-styling.css.map */

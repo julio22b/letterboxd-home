@@ -3,6 +3,7 @@ $orange: #ff8000;
 $blue: #40bcf4;
 $gray: #707f8d;
 $gray-border: #969092;
+$poster-border: #707f8d88;
 
 body {
     background-color: #14181c;
@@ -143,7 +144,7 @@ main {
 .popular-films {
     & > div {
         img {
-            border: 1px solid $gray-border;
+            border: 1px solid $poster-border;
         }
         &:hover img {
             box-shadow: inset 0px 5px 5px $green;
@@ -276,7 +277,7 @@ main {
     & > div {
         padding: 0 4px;
         img {
-            border: 1px solid $gray-border;
+            border: 1px solid $poster-border;
             border-radius: 3px;
         }
     }
@@ -316,6 +317,11 @@ main {
         article {
             padding: 1em 0;
             border-bottom: 1px solid #2c3440;
+            figure > div img {
+                border: 1px solid $poster-border;
+                min-width: 100%;
+                border-radius: 5px;
+            }
             figcaption {
                 h3 span {
                     color: #94a5b6;
@@ -367,7 +373,7 @@ main {
                     display: inline-block;
                     width: 24px;
                     height: 24px;
-                    background: url('./imgs/like.png');
+                    background: url('./imgs/heart-dark-bg.png');
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -376,6 +382,129 @@ main {
                 p:last-child {
                     font-size: 0.7rem;
                     font-weight: bold;
+                }
+            }
+        }
+    }
+    .popular-lists-reviewers {
+        padding: 0;
+        padding-left: 2em;
+    }
+    .popular-lists {
+        padding-right: 0;
+        header {
+            border-bottom: 1px solid #94a5b6;
+            padding: 0.3em 0;
+            margin-bottom: 1em;
+            h5 {
+                color: #94a5b6;
+                font-size: 0.9rem;
+            }
+            span a {
+                color: #94a5b6;
+                text-decoration: none;
+                font-size: 0.7rem;
+            }
+        }
+        .list {
+            padding: 1em 0;
+            ul {
+                li {
+                    border: 1px solid $poster-border;
+                    margin-left: -9%;
+                    box-shadow: 3px 0 3px black;
+                    border-radius: 5px;
+                    width: 30%;
+                    img {
+                        min-width: 100%;
+                    }
+                }
+                li:first-child {
+                    z-index: 20;
+                    margin-left: 0;
+                }
+                li:nth-child(2) {
+                    z-index: 19;
+                }
+                li:nth-child(3) {
+                    z-index: 18;
+                }
+                li:nth-child(4) {
+                    z-index: 17;
+                }
+                li:nth-child(5) {
+                    z-index: 16;
+                }
+            }
+            h4 {
+                color: white;
+                margin-top: 0.5em;
+            }
+            p {
+                color: #94a5b6;
+                font-size: 0.7rem;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 0.2em;
+                }
+                span {
+                    color: #94a5b6;
+                    margin-right: 0.4em;
+                }
+                .heart {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: url('./imgs/heart-dark-bg.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 0.3em;
+                }
+                .speech-bubble {
+                    width: 14px;
+                    height: 14px;
+                    background: url('./imgs/iconmonstr-speech-bubble-15-16.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin: 0 0.25em;
+                }
+            }
+        }
+    }
+    .popular-reviewers {
+        padding-right: 0;
+        header {
+            border-bottom: 1px solid #94a5b6;
+            padding: 0.3em 0;
+            h5 {
+                color: #94a5b6;
+                font-size: 0.9rem;
+            }
+            span a {
+                color: #94a5b6;
+                text-decoration: none;
+                font-size: 0.7rem;
+            }
+        }
+        figure {
+            padding: 0.6em 0;
+            border-bottom: 1px solid $poster-border;
+            img {
+                width: 16%;
+                height: 50px;
+            }
+            figcaption {
+                margin-left: 0.5em;
+                p {
+                    margin: 0;
+                    a {
+                        color: #94a5b6;
+                        text-decoration: none;
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
