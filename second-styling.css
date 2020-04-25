@@ -1,5 +1,6 @@
 body {
   background-color: #14181c;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -72,6 +73,19 @@ body {
 
 .background img {
   z-index: -2;
+}
+
+.background .movie-title {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  right: 0;
+  top: 50%;
+}
+
+.background .movie-title a {
+  color: #94a5b680;
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
 header {
@@ -194,6 +208,10 @@ main {
   margin-top: 2em;
   margin-bottom: 2em;
   border-radius: 5px;
+}
+
+.intro button:hover {
+  background-color: #00b020;
 }
 
 .intro p {

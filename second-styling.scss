@@ -4,9 +4,11 @@ $blue: #40bcf4;
 $gray: #707f8d;
 $gray-border: #969092;
 $poster-border: #707f8d88;
+$text-gray: #94a5b6;
 
 body {
     background-color: #14181c;
+    font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -104,6 +106,16 @@ body {
     img {
         z-index: -2;
     }
+    .movie-title {
+        transform: rotate(270deg);
+        right: 0;
+        top: 50%;
+        a {
+            color: #94a5b680;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    }
 }
 
 header {
@@ -188,6 +200,9 @@ main {
         margin-top: 2em;
         margin-bottom: 2em;
         border-radius: 5px;
+        &:hover {
+            background-color: #00b020;
+        }
     }
     p {
         color: $gray;
@@ -273,7 +288,7 @@ main {
 .letterboxd-lets-you {
     margin: 3em 0;
     > h3 {
-        color: #94a5b6;
+        color: $text-gray;
         padding-left: 0.3em;
         padding-bottom: 0.7em;
     }
@@ -345,11 +360,11 @@ main {
 .just-reviewed {
     header {
         padding: 0.2em 0;
-        border-bottom: 1px solid #94a5b6;
+        border-bottom: 1px solid $text-gray;
         margin-bottom: 1em;
         h3,
         small {
-            color: #94a5b6;
+            color: $text-gray;
             font-weight: normal;
         }
         small {
@@ -370,7 +385,7 @@ main {
         }
     }
     p {
-        color: #94a5b6;
+        color: $text-gray;
         margin-top: 3em;
     }
 
@@ -390,14 +405,14 @@ main {
     margin-top: 3em;
     .popular-this-week {
         header {
-            border-bottom: 1px solid #94a5b6;
+            border-bottom: 1px solid $text-gray;
             padding: 0.3em 0;
             margin-bottom: 1em;
             h5 {
-                color: #94a5b6;
+                color: $text-gray;
             }
             span a {
-                color: #94a5b6;
+                color: $text-gray;
                 text-decoration: none;
                 font-size: 0.7rem;
             }
@@ -412,11 +427,11 @@ main {
             }
             figcaption {
                 h3 span {
-                    color: #94a5b6;
+                    color: $text-gray;
                     padding: 0.2em 0;
                 }
                 .commenter {
-                    color: #94a5b6;
+                    color: $text-gray;
                     padding: 0.2em 0;
                     img {
                         margin: 0 0.5em;
@@ -428,7 +443,7 @@ main {
                         margin-right: 0.3em;
                     }
                     span {
-                        color: #94a5b6;
+                        color: $text-gray;
                         margin-right: 0.5em;
                         font-size: 0.9rem;
                     }
@@ -446,12 +461,12 @@ main {
                     }
                 }
                 p {
-                    color: #94a5b6;
+                    color: $text-gray;
                     font-size: 0.9rem;
                     letter-spacing: 0;
                     a {
                         text-decoration: none;
-                        color: #94a5b6;
+                        color: $text-gray;
                         &:hover {
                             color: white;
                         }
@@ -490,15 +505,15 @@ main {
     .popular-lists {
         padding-right: 0;
         header {
-            border-bottom: 1px solid #94a5b6;
+            border-bottom: 1px solid $text-gray;
             padding: 0.3em 0;
             margin-bottom: 1em;
             h5 {
-                color: #94a5b6;
+                color: $text-gray;
                 font-size: 0.9rem;
             }
             span a {
-                color: #94a5b6;
+                color: $text-gray;
                 text-decoration: none;
                 font-size: 0.7rem;
             }
@@ -538,7 +553,7 @@ main {
                 margin-top: 0.5em;
             }
             p {
-                color: #94a5b6;
+                color: $text-gray;
                 font-size: 0.7rem;
                 img {
                     width: 20px;
@@ -546,7 +561,7 @@ main {
                     margin-right: 0.2em;
                 }
                 span {
-                    color: #94a5b6;
+                    color: $text-gray;
                     margin-right: 0.4em;
                 }
                 .heart {
@@ -581,14 +596,14 @@ main {
             margin-bottom: 3em;
         }
         header {
-            border-bottom: 1px solid #94a5b6;
+            border-bottom: 1px solid $text-gray;
             padding: 0.3em 0;
             h5 {
-                color: #94a5b6;
+                color: $text-gray;
                 font-size: 0.9rem;
             }
             span a {
-                color: #94a5b6;
+                color: $text-gray;
                 text-decoration: none;
                 font-size: 0.7rem;
             }
@@ -605,7 +620,7 @@ main {
                 p {
                     margin: 0;
                     a {
-                        color: #94a5b6;
+                        color: $text-gray;
                         text-decoration: none;
                         font-size: 0.7rem;
                     }
@@ -621,14 +636,14 @@ main {
         margin-bottom: 2em;
     }
     header {
-        border-bottom: 1px solid #94a5b6;
+        border-bottom: 1px solid $text-gray;
         padding: 0.3em 0;
         margin-bottom: 2em;
         h5 {
-            color: #94a5b6;
+            color: $text-gray;
         }
         span a {
-            color: #94a5b6;
+            color: $text-gray;
             text-decoration: none;
             font-size: 0.7rem;
         }
@@ -643,7 +658,7 @@ main {
                     margin-top: 0.5em;
                 }
                 p {
-                    color: #94a5b6;
+                    color: $text-gray;
                     font-size: 0.9rem;
                 }
             }
@@ -684,7 +699,7 @@ footer {
                 }
             }
             li {
-                color: #94a5b6;
+                color: $text-gray;
                 font-size: 0.9rem;
             }
         }
