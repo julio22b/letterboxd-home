@@ -60,6 +60,12 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .background {
+    min-height: 35vh;
+  }
+}
+
 .background::before {
   content: '';
   position: absolute;
@@ -198,6 +204,12 @@ main {
 @media screen and (max-width: 450px) {
   main {
     margin-top: 15vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    margin-top: 10vh;
   }
 }
 
@@ -843,6 +855,7 @@ main {
 
 footer {
   position: relative;
+  overflow-x: hidden;
   padding: 2em 0;
   background-color: #2c3440;
 }
@@ -857,6 +870,12 @@ footer::before {
   height: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  footer::before {
+    content: none;
+  }
+}
+
 footer::after {
   content: '';
   background-color: #2c3440;
@@ -865,6 +884,12 @@ footer::after {
   right: -30%;
   width: 30%;
   height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  footer::after {
+    content: none;
+  }
 }
 
 footer div {

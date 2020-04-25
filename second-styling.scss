@@ -42,6 +42,9 @@ body {
     @media screen and (max-width: 450px) {
         min-height: 40vh;
     }
+    @media screen and (max-width: 400px) {
+        min-height: 35vh;
+    }
 
     &::before {
         content: '';
@@ -193,6 +196,9 @@ main {
     }
     @media screen and (max-width: 450px) {
         margin-top: 15vh;
+    }
+    @media screen and (max-width: 400px) {
+        margin-top: 10vh;
     }
 }
 
@@ -705,6 +711,7 @@ main {
 
 footer {
     position: relative;
+    overflow-x: hidden;
     &::before {
         content: '';
         background-color: #2c3440;
@@ -713,6 +720,9 @@ footer {
         left: -30%;
         width: 30%;
         height: 100%;
+        @media screen and (max-width: 500px) {
+            content: none;
+        }
     }
     &::after {
         content: '';
@@ -722,6 +732,9 @@ footer {
         right: -30%;
         width: 30%;
         height: 100%;
+        @media screen and (max-width: 500px) {
+            content: none;
+        }
     }
     padding: 2em 0;
     background-color: #2c3440;
