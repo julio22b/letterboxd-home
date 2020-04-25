@@ -855,7 +855,6 @@ main {
 
 footer {
   position: relative;
-  overflow-x: hidden;
   padding: 2em 0;
   background-color: #2c3440;
 }
