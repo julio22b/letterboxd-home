@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./my-CSS-framework/style.css"" />
+        <link rel="stylesheet" href="./my-CSS-framework/style.css" />
         <link rel="stylesheet" href="./second-styling.css" />
         <title>Letterboxd</title>
     </head>
@@ -18,8 +18,8 @@
                 <span class="absolute text-white"><a href="#">First Cow(2019)</a></span>
             </div>
             <header class="row relative justify-content-between">
-                <img class="col-3" src="./imgs/letterboxd-logo-h-pos-rgb-1000px.png" alt="" />
-                <nav class="col-9">
+                <img class="col-3 lg-col-4 md-col-5 xsm-col-6" src="./imgs/logo-white.png" alt="" />
+                <nav class="col-9 d-flex-row align-items-center lg-d-none">
                     <ul class="col-12 justify-content-end nav-list">
                         <li class="nav-list-item">
                             <a class="nav-list-link text-white small" href="#">SIGN IN</a>
@@ -36,11 +36,29 @@
                         <li class="nav-list-item">
                             <a class="nav-list-link text-white small" href="#">PEOPLE</a>
                         </li>
-                        <li class="nav-list-item col-2">
-                            <input type="search" /><img src="" alt="" />
+                        <li class="nav-list-item col-2 relative">
+                            <input type="search" /><img
+                                class="absolute"
+                                src="./imgs/iconmonstr-magnifier-6-24.png"
+                                alt=""
+                            />
                         </li>
                     </ul>
                 </nav>
+                <ul
+                    class="burger-menu col-6 d-none lg-d-flex-row justify-content-end no-list-style"
+                >
+                    <li class="col-6 sm-col-7 relative d-flex-row align-items-center">
+                        <input type="search" /><img
+                            class="absolute"
+                            src="./imgs/iconmonstr-magnifier-6-24.png"
+                            alt=""
+                        />
+                    </li>
+                    <li class="col-2 sm-col-3 d-flex-row align-items-center">
+                        <img src="./imgs/iconmonstr-menu-1-24.png" alt="" />
+                    </li>
+                </ul>
             </header>
             <main>
                 <section class="intro row">
@@ -50,83 +68,85 @@
                             Save those you want to see. <br />
                             Tell your friends what’s good.
                         </h1>
-                        <button class="mx-auto col-8">GET STARTED &mdash; IT'S FREE!</button>
-                        <p class="d-flex-row mx-auto col-8">
+                        <button class="mx-auto col-3 lg-col-4 sm-col-6">
+                            GET STARTED &mdash; IT'S FREE!
+                        </button>
+                        <p class="d-flex-row mx-auto col-8 lg-col-12 justify-content-center">
                             The social network for film lovers. Also available on
                             <i class="apple-logo"></i><i class="android-logo"></i>
                         </p>
                     </article>
                 </section>
                 <section class="popular-films row">
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center sm-mb-">
                             <img src="./imgs/487135-first-cow-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>2,523</li>
                             <li class="liked"></li>
                             <li>892</li>
                         </ul>
                     </div>
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center sm-mb-">
                             <img src="./imgs/458743-the-way-back-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>13,409</li>
                             <li class="liked"></li>
                             <li>3,664</li>
                         </ul>
                     </div>
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center sm-mb-">
                             <img src="./imgs/438272-onward-0-150-0-225-crop.jpg" alt="" />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>76,152</li>
                             <li class="liked"></li>
                             <li>23,700</li>
                         </ul>
                     </div>
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center sm-mb-">
                             <img
                                 src="./imgs/499085-the-invisible-man-0-150-0-225-crop.jpg"
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>105,321</li>
                             <li class="liked"></li>
                             <li>38,376</li>
                         </ul>
                     </div>
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center sm-mb-">
                             <img
                                 src="./imgs/426131-birds-of-prey-and-the-fantabulous-emancipation-of-one-har-0-150-0-225-crop.jpg"
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>133,216</li>
                             <li class="liked"></li>
                             <li>41,765</li>
                         </ul>
                     </div>
-                    <div class="col-2 relative">
-                        <a href="#" class="col-12">
+                    <div class="col-2 relative sm-col-4 sm-d-flex-row sm-justify-content-center">
+                        <a href="#" class="col-12 sm-d-flex-row sm-justify-content-center">
                             <img
                                 src="./imgs/460830-portrait-of-a-lady-on-fire-0-150-0-225-crop.jpg"
                                 alt=""
                             />
                         </a>
-                        <ul class="no-list-style absolute d-flex-col align-items-center">
+                        <ul class="no-list-style absolute d-flex-col align-items-center lg-d-none">
                             <li class="watched"></li>
                             <li>122,751</li>
                             <li class="liked"></li>
@@ -136,7 +156,7 @@
                 </section>
                 <section class="letterboxd-lets-you row d-flex-row flex-nowrap">
                     <h3 class="col-12 small font-normal">LETTERBOXD LETS YOU...</h3>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper green d-flex-row align-items-start 12 no-p">
                             <div class="watch col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -145,7 +165,7 @@
                             </p>
                         </div>
                     </article>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper orange d-flex-row align-items-start 12 no-p">
                             <div class="like col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -154,7 +174,7 @@
                             </p>
                         </div>
                     </article>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper blue d-flex-row align-items-start 12 no-p">
                             <div class="bars col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -163,7 +183,7 @@
                             </p>
                         </div>
                     </article>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper green d-flex-row align-items-start 12 no-p">
                             <div class="star col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -172,7 +192,7 @@
                             </p>
                         </div>
                     </article>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper orange d-flex-row align-items-start 12 no-p">
                             <div class="case col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -181,7 +201,7 @@
                             </p>
                         </div>
                     </article>
-                    <article class="d-flex-row col-4">
+                    <article class="d-flex-row col-4 sm-col-6 xsm-col-12">
                         <div class="wrapper blue d-flex-row align-items-start 12 no-p">
                             <div class="squares col-2"></div>
                             <p class="col-4 text-white col-10">
@@ -196,49 +216,49 @@
                         <h3 class="small">JUST REVIEWED...</h3>
                         <small>410,186,419 films watched</small>
                     </header>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/468556-fantasy-island-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/328623-chokeslam-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/51294-sleepless-in-seattle-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/18627-incendies-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/218114-dirty-grandpa-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/28543-assignment-outer-space-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img
                             src="./imgs/42571-evangelion-1-0-you-are-not-alone-0-70-0-105-crop.jpg"
                             alt=""
                         />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img
                             src="./imgs/41822-the-adventures-of-elmo-in-grouchland-0-70-0-105-crop.jpg"
                             alt=""
                         />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/50013-the-butcher-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/51376-the-rules-of-the-game-0-70-0-105-crop.jpg" alt="" />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img
                             src="./imgs/129816-mission-impossible-rogue-nation-0-70-0-105-crop.jpg"
                             alt=""
                         />
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 sm-col-2 sm-d-flex-row sm-justify-content-center xsm-col-3">
                         <img src="./imgs/harrypotter2-0-70-0-105-crop.jpg" alt="" />
                     </div>
                     <p class="col-12 text-center h2 font-normal">
@@ -250,7 +270,7 @@
                     </p>
                 </section>
                 <section class="popular row">
-                    <section class="popular-this-week col-8">
+                    <section class="popular-this-week col-8 sm-col-12">
                         <header class="d-flex-row justify-content-between">
                             <h5 class="h6 font-normal">POPULAR REVIEWS THIS WEEK</h5>
                             <span><a href="#" class="small">MORE</a></span>
@@ -455,13 +475,17 @@
                         </article>
                     </section>
                     <!-- POPULAR LISTS AND REVIEWERS SECTION -->
-                    <section class="popular-lists-reviewers col-4">
-                        <section class="popular-lists col-12">
-                            <header class="d-flex-row justify-content-between">
+                    <section
+                        class="popular-lists-reviewers col-4 sm-col-12 d-flex-row sm-justify-content-between xsm-flex-wrap"
+                    >
+                        <section
+                            class="popular-lists col-12 sm-col-6 xsm-col-12 xsm-d-flex-col xsm-align-items-center"
+                        >
+                            <header class="d-flex-row justify-content-between w-100">
                                 <h5 class="h5 font-normal">POPULAR LISTS</h5>
                                 <span><a href="#" class="small">MORE</a></span>
                             </header>
-                            <article class="list">
+                            <article class="list xsm-col-10">
                                 <a href="#">
                                     <ul class="no-list-style d-flex-row">
                                         <li class="relative">
@@ -492,7 +516,7 @@
                                 </p>
                             </article>
 
-                            <article class="list">
+                            <article class="list xsm-col-10">
                                 <a href="#">
                                     <ul class="no-list-style d-flex-row">
                                         <li class="relative">
@@ -534,7 +558,7 @@
                                 </p>
                             </article>
 
-                            <article class="list">
+                            <article class="list xsm-col-10">
                                 <a href="#">
                                     <ul class="no-list-style d-flex-row">
                                         <li class="relative">
@@ -564,13 +588,13 @@
                                 </p>
                             </article>
                         </section>
-                        <section class="popular-reviewers col-12">
+                        <section class="popular-reviewers col-12 sm-col-5 xsm-col-12">
                             <header class="d-flex-row justify-content-between">
                                 <h5 class="h5 font-normal">POPULAR REVIEWERS</h5>
                                 <span><a href="#" class="small">MORE</a></span>
                             </header>
                             <figure class="d-flex-row justify-content-start">
-                                <img src="./imgs/brat.png" alt="" />
+                                <img class="xsm-col-2" src="./imgs/brat.png" alt="" />
                                 <figcaption>
                                     <h5 class="h5 text-white">brat pitt</h5>
                                     <p class="small">
@@ -579,7 +603,7 @@
                                 </figcaption>
                             </figure>
                             <figure class="d-flex-row justify-content-start">
-                                <img src="./imgs/lucy.png" alt="" />
+                                <img class="xsm-col-2" src="./imgs/lucy.png" alt="" />
                                 <figcaption>
                                     <h5 class="h5 text-white">Lucy</h5>
                                     <p class="small">
@@ -588,7 +612,7 @@
                                 </figcaption>
                             </figure>
                             <figure class="d-flex-row justify-content-start">
-                                <img src="./imgs/adrian.png" alt="" />
+                                <img class="xsm-col-2" src="./imgs/adrian.png" alt="" />
                                 <figcaption>
                                     <h5 class="h5 text-white">adrianbalboa</h5>
                                     <p class="small">
@@ -597,7 +621,7 @@
                                 </figcaption>
                             </figure>
                             <figure class="d-flex-row justify-content-start">
-                                <img src="./imgs/random.png" alt="" />
+                                <img class="xsm-col-2" src="./imgs/random.png" alt="" />
                                 <figcaption>
                                     <h5 class="h5 text-white">Demi Adejuyigbe</h5>
                                     <p class="small">
@@ -606,7 +630,7 @@
                                 </figcaption>
                             </figure>
                             <figure class="d-flex-row justify-content-start">
-                                <img src="./imgs/maria.png" alt="" />
+                                <img class="xsm-col-2" src="./imgs/maria.png" alt="" />
                                 <figcaption>
                                     <h5 class="h5 text-white">maria</h5>
                                     <p class="small">
@@ -622,7 +646,7 @@
                         <h5 class="h6 font-normal">RECENT NEWS</h5>
                         <span><a href="#" class="small">MORE</a></span>
                     </header>
-                    <article class="col-4">
+                    <article class="col-4 xsm-col-12">
                         <figure class="d-flex-col">
                             <img src="./imgs/touching-the-void.png" alt="" />
                             <figcaption>
@@ -634,7 +658,7 @@
                             </figcaption>
                         </figure>
                     </article>
-                    <article class="col-4">
+                    <article class="col-4 xsm-col-12">
                         <figure class="d-flex-col">
                             <img src="./imgs/infinite-playlists.png" alt="" />
                             <figcaption>
@@ -646,7 +670,7 @@
                             </figcaption>
                         </figure>
                     </article>
-                    <article class="col-4">
+                    <article class="col-4 xsm-col-12">
                         <figure class="d-flex-col">
                             <img src="./imgs/how-i-letterboxd.png" alt="" />
                             <figcaption>
@@ -661,8 +685,10 @@
                 </section>
             </main>
             <footer class="row">
-                <div class="d-flex-row justify-content-between col-12">
-                    <ul class="d-flex-row no-list-style justify-content-between col-9">
+                <div class="d-flex-row justify-content-between col-12 flex-wrap">
+                    <ul
+                        class="d-flex-row no-list-style justify-content-between col-9 lg-col-12 sm-flex-wrap sm-justify-content-start"
+                    >
                         <li class="font-bold">About</li>
                         <li class="font-bold">News</li>
                         <li class="font-bold">Pro</li>
@@ -675,7 +701,7 @@
                         <li class="font-bold">API</li>
                         <li class="font-bold">Contact</li>
                     </ul>
-                    <ul class="d-flex-row no-list-style justify-content-between col-2">
+                    <ul class="d-flex-row no-list-style justify-content-between col-2 sm-col-5">
                         <li><img src="./imgs/iconmonstr-twitter-1-24.png" alt="" /></li>
                         <li>/</li>
                         <li><img src="./imgs/iconmonstr-facebook-4-24.png" alt="" /></li>

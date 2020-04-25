@@ -6,8 +6,56 @@ body {
   max-width: 70%;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 .background {
   min-height: 90vh;
+}
+
+@media screen and (max-width: 1060px) {
+  .background {
+    min-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .background {
+    min-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .background {
+    min-height: 55vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .background {
+    min-height: 45vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .background {
+    min-height: 40vh;
+  }
 }
 
 .background::before {
@@ -32,7 +80,12 @@ header {
   letter-spacing: 1px;
 }
 
-header nav ul li input {
+header img {
+  margin-top: -0.5em;
+}
+
+header nav ul li input,
+header ul input {
   opacity: 0.4;
   border-radius: 100px;
   border: none;
@@ -42,16 +95,86 @@ header nav ul li input {
   width: 100%;
 }
 
-header nav ul li input:focus {
+header nav ul li input:focus,
+header ul input:focus {
   opacity: 1;
 }
 
-header nav ul li input:hover {
+header nav ul li input:hover,
+header ul input:hover {
   opacity: 1;
+}
+
+header nav ul li img,
+header ul img {
+  right: 20%;
+  top: 55%;
+  width: 12px;
+}
+
+header .burger-menu li:first-child img {
+  right: 10%;
+}
+
+@media screen and (max-width: 760px) {
+  header .burger-menu li:first-child img {
+    right: 15%;
+  }
+}
+
+header .burger-menu li:last-child img {
+  width: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .burger-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 main {
   margin-top: 40vh;
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    margin-top: 35vh;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  main {
+    margin-top: 27vh;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  main {
+    margin-top: 23vh;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main {
+    margin-top: 18vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    margin-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    margin-top: 15vh;
+  }
 }
 
 .intro {
@@ -66,7 +189,7 @@ main {
 
 .intro button {
   background-color: #00c030;
-  width: 25%;
+  min-width: 25%;
   padding: 0.5em 0;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -96,6 +219,19 @@ main {
   background-size: contain;
 }
 
+@media screen and (max-width: 750px) {
+  .intro h1 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .popular-films > div {
+    padding: 0.8em 0;
+  }
+}
+
 .popular-films > div img {
   border: 1px solid #707f8d88;
 }
@@ -109,6 +245,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .popular-films > div:hover ul {
+    display: none;
+  }
 }
 
 .popular-films > div ul {
@@ -255,6 +397,18 @@ main {
   padding: 0 4px;
 }
 
+@media screen and (max-width: 760px) {
+  .just-reviewed > div {
+    padding: 0.8em 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .just-reviewed > div {
+    padding: 0.5em 0;
+  }
+}
+
 .just-reviewed > div img {
   border: 1px solid #707f8d88;
   border-radius: 3px;
@@ -388,6 +542,22 @@ main {
 .popular .popular-lists-reviewers {
   padding: 0;
   padding-left: 2em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  .popular .popular-lists-reviewers {
+    padding-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .popular .popular-lists {
@@ -493,6 +663,19 @@ main {
 
 .popular .popular-reviewers {
   padding-right: 0;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 760px) {
+  .popular .popular-reviewers {
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popular .popular-reviewers {
+    margin-bottom: 3em;
+  }
 }
 
 .popular .popular-reviewers header {
@@ -535,6 +718,16 @@ main {
   font-size: 0.7rem;
 }
 
+.recent-news {
+  margin-bottom: 5em;
+}
+
+@media screen and (max-width: 500px) {
+  .recent-news {
+    margin-bottom: 2em;
+  }
+}
+
 .recent-news header {
   border-bottom: 1px solid #94a5b6;
   padding: 0.3em 0;
@@ -549,6 +742,12 @@ main {
   color: #94a5b6;
   text-decoration: none;
   font-size: 0.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .recent-news article {
+    margin-bottom: 1.5em;
+  }
 }
 
 .recent-news article figure figcaption h3 {
@@ -586,13 +785,31 @@ footer::after {
   height: 100%;
 }
 
+footer div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 footer div ul {
   padding: 1em 0 !important;
+}
+
+@media screen and (max-width: 760px) {
+  footer div ul li {
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+  }
 }
 
 footer div ul li {
   color: #94a5b6;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 760px) {
+  footer div ul:last-child li {
+    margin-right: 0;
+  }
 }
 
 footer div ul:last-child li {
