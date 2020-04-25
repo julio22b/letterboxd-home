@@ -237,6 +237,14 @@ main {
   background-size: contain;
 }
 
+@media screen and (max-width: 760px) {
+  .intro p.sm-d-flex-row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .intro h1 {
     font-size: 1.5rem;
@@ -311,6 +319,12 @@ main {
 
 .letterboxd-lets-you {
   margin: 3em 0;
+}
+
+@media screen and (max-width: 500px) {
+  .letterboxd-lets-you {
+    padding: 0 0.5em;
+  }
 }
 
 .letterboxd-lets-you > h3 {
@@ -401,6 +415,12 @@ main {
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 500px) {
+  .just-reviewed header {
+    margin: 0 0.5em;
+  }
+}
+
 .just-reviewed header h3,
 .just-reviewed header small {
   color: #94a5b6;
@@ -454,10 +474,20 @@ main {
   margin-top: 3em;
 }
 
+.popular .popular-this-week {
+  padding-left: 0;
+}
+
 .popular .popular-this-week header {
   border-bottom: 1px solid #94a5b6;
   padding: 0.3em 0;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .popular .popular-this-week header {
+    margin: 0 0.5em;
+  }
 }
 
 .popular .popular-this-week header h5 {
@@ -586,6 +616,12 @@ main {
   border-bottom: 1px solid #94a5b6;
   padding: 0.3em 0;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .popular .popular-lists header {
+    margin: 0 0.5em;
+  }
 }
 
 .popular .popular-lists header h5 {
@@ -722,6 +758,18 @@ main {
   height: 50px;
 }
 
+@media screen and (max-width: 850px) {
+  .popular .popular-reviewers figure img {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popular .popular-reviewers figure img {
+    width: 16%;
+  }
+}
+
 .popular .popular-reviewers figure figcaption {
   margin-left: 0.5em;
 }
@@ -750,6 +798,12 @@ main {
   border-bottom: 1px solid #94a5b6;
   padding: 0.3em 0;
   margin-bottom: 2em;
+}
+
+@media screen and (max-width: 500px) {
+  .recent-news header {
+    margin: 0 0.5em;
+  }
 }
 
 .recent-news header h5 {

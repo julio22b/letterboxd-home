@@ -223,6 +223,11 @@ main {
             background-size: contain;
         }
     }
+    p.sm-d-flex-row {
+        @media screen and (max-width: 760px) {
+            display: flex !important;
+        }
+    }
 }
 
 @media screen and(max-width: 750px) {
@@ -287,6 +292,9 @@ main {
 
 .letterboxd-lets-you {
     margin: 3em 0;
+    @media screen and (max-width: 500px) {
+        padding: 0 0.5em;
+    }
     > h3 {
         color: $text-gray;
         padding-left: 0.3em;
@@ -362,6 +370,9 @@ main {
         padding: 0.2em 0;
         border-bottom: 1px solid $text-gray;
         margin-bottom: 1em;
+        @media screen and (max-width: 500px) {
+            margin: 0 0.5em;
+        }
         h3,
         small {
             color: $text-gray;
@@ -404,10 +415,14 @@ main {
 .popular {
     margin-top: 3em;
     .popular-this-week {
+        padding-left: 0;
         header {
             border-bottom: 1px solid $text-gray;
             padding: 0.3em 0;
             margin-bottom: 1em;
+            @media screen and (max-width: 500px) {
+                margin: 0 0.5em;
+            }
             h5 {
                 color: $text-gray;
             }
@@ -508,6 +523,9 @@ main {
             border-bottom: 1px solid $text-gray;
             padding: 0.3em 0;
             margin-bottom: 1em;
+            @media screen and (max-width: 500px) {
+                margin: 0 0.5em;
+            }
             h5 {
                 color: $text-gray;
                 font-size: 0.9rem;
@@ -614,6 +632,12 @@ main {
             img {
                 width: 16%;
                 height: 50px;
+                @media screen and (max-width: 850px) {
+                    width: 20%;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 16%;
+                }
             }
             figcaption {
                 margin-left: 0.5em;
@@ -639,6 +663,9 @@ main {
         border-bottom: 1px solid $text-gray;
         padding: 0.3em 0;
         margin-bottom: 2em;
+        @media screen and (max-width: 500px) {
+            margin: 0 0.5em;
+        }
         h5 {
             color: $text-gray;
         }
