@@ -1,6 +1,7 @@
 body {
   background-color: #14181c;
   font-family: 'Roboto Slab', serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -86,6 +87,15 @@ body {
   color: #94a5b680;
   text-decoration: none;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .background .movie-title {
+    top: 40%;
+  }
+  .background .movie-title a {
+    font-size: 0.6rem;
+  }
 }
 
 header {

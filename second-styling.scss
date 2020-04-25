@@ -9,6 +9,7 @@ $text-gray: #94a5b6;
 body {
     background-color: #14181c;
     font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -114,6 +115,15 @@ body {
             color: #94a5b680;
             text-decoration: none;
             font-size: 0.8rem;
+        }
+    }
+
+    @media screen and(max-width: 500px) {
+        .movie-title {
+            top: 40%;
+            a {
+                font-size: 0.6rem;
+            }
         }
     }
 }
